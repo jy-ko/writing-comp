@@ -1,24 +1,7 @@
-# README
+Writing Comparison Game:
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Develop an application where user can submit their essay and will get rewards at the end of the day.
 
-Things you may want to cover:
+The user with the most extended character in the body will get rewards. Rewards will be a point system where the first position holder will have 15 points, the second will have 10 points, and the third will have 5 other users who will not receive anything.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Run a cron job at the end of the day to calculate words in the essay; submit on that day and reward the users for their submission.
