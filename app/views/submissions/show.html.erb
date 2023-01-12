@@ -2,6 +2,9 @@
 
 <%= render @submission %>
 
+<h2>Character count: <%= @submission.essay.length %></h2>
+<p><%= @submission.essay %></p>
+
 <div>
   <%= link_to "Edit this submission", edit_submission_path(@submission) %> |
   <%= link_to "Back to submissions", submissions_path %>
