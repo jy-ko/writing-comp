@@ -4,6 +4,7 @@ class SubmissionsController < ApplicationController
   # GET /submissions or /submissions.json
   def index
     @submissions = Submission.all
+    RewardJob.set(wait_until: Date.tomorrow.midnight).perform_later
   end
 
   # GET /submissions/1 or /submissions/1.json
