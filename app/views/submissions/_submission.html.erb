@@ -1,7 +1,7 @@
 <div id="<%= dom_id submission %>">
   <p>
     <strong>User:</strong>
-    <%= submission.user_id %>
+    <%= User.find_by(id: submission.user_id).email %>
   </p>
 
 </div>
