@@ -2,6 +2,8 @@ class RewardJob < ApplicationJob
   queue_as :default
 
   def perform(*args)
-    User.reward_winners
+    if Submission.count >= 3 
+      User.reward_winners
+    end 
   end
 end
